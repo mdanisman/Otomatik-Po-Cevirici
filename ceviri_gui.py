@@ -11,7 +11,6 @@ import ceviri
 from i18n import i18n
 from ui_texts import ui_texts
 
-# UI Queue mesaj tipleri - magic string yerine sabitler
 class UIMessageType:
     LOG = "log"
     PROGRESS = "progress"
@@ -22,7 +21,6 @@ class UIMessageType:
 
 CONFIG_PATH = "ayarlar.json"
 
-# GUI logger
 _gui_logger = logging.getLogger("ceviri_gui")
 
 def _yukle_ayarlar():
@@ -136,8 +134,7 @@ def ui_poller():
             elif item[0] == UIMessageType.DONE:
                 global worker_running
                 ok, skip, hatalar, toplam_hata = item[1], item[2], item[3], item[4]
-                
-                # Hata sayısını güncelle
+
                 stats["hata"] = toplam_hata
                 ui_queue.put((UIMessageType.STATS, "hata", toplam_hata))
                 
@@ -417,8 +414,7 @@ def gelismis_ayarlar():
         try:
             with open("gelismis_ayarlar.json", "w", encoding="utf-8") as f:
                 json.dump(yeni_ayarlar, f, ensure_ascii=False, indent=4)
-            
-            # Runtime ayarları güncelle
+
             ceviri.ayarlari_guncelle(yeni_ayarlar)
             
             messagebox.showinfo(_("Başarılı"), _("Gelişmiş ayarlar kaydedildi"))
@@ -461,7 +457,7 @@ def baslat():
         return
 
     try:
-        # Atomik yazma
+
         gecici_dosya = CONFIG_PATH + ".tmp"
         with open(gecici_dosya, "w", encoding="utf-8") as f:
             json.dump(
@@ -515,13 +511,11 @@ main = ttk.Frame(root, padding=20)
 main.pack(fill="both", expand=True)
 main.columnconfigure(1, weight=1)
 
-# Kullanıcı dostu dil isimleri
 DIL_GOSTERIM = {
     "tr_TR": "🇹🇷 Türkçe",
     "en_US": "🇬🇧 English"
 }
 
-# Ters mapping (gösterim -> kod)
 GOSTERIM_DIL = {v: k for k, v in DIL_GOSTERIM.items()}
 
 dil_frame = ttk.Frame(main, padding=5)
@@ -531,14 +525,13 @@ lbl_dil = ttk.Label(dil_frame)
 lbl_dil.pack(side="left", padx=5)
 ui_texts.kaydet(lbl_dil, "Dil:")
 
-# Mevcut dil kodunu gösterime çevir
 mevcut_gosterim = DIL_GOSTERIM.get(i18n.aktif_dil, i18n.aktif_dil)
 dil_var = tk.StringVar(value=mevcut_gosterim)
 
 dil_combo = ttk.Combobox(
     dil_frame, 
     textvariable=dil_var, 
-    values=list(DIL_GOSTERIM.values()),  # Gösterim isimleri
+    values=list(DIL_GOSTERIM.values()),
     state="readonly", 
     width=15
 )
@@ -546,10 +539,10 @@ dil_combo.pack(side="left")
 
 def dil_degistir(*args):
     gosterim = dil_var.get()
-    yeni_dil = GOSTERIM_DIL.get(gosterim, "tr_TR")  # Koda çevir
+    yeni_dil = GOSTERIM_DIL.get(gosterim, "tr_TR")
     
     if yeni_dil == i18n.aktif_dil:
-        return  # Aynı dil, güncelleme gereksiz
+        return
     
     i18n.yukle(yeni_dil)
     
@@ -569,8 +562,6 @@ def dil_degistir(*args):
     try:
         mevcut_cfg = _yukle_ayarlar()
         mevcut_cfg["dil"] = yeni_dil
-        
-        # Atomik yazma
         gecici_dosya = CONFIG_PATH + ".tmp"
         with open(gecici_dosya, "w", encoding="utf-8") as f:
             json.dump(mevcut_cfg, f, ensure_ascii=False, indent=2)
@@ -610,7 +601,6 @@ btn_folder = ttk.Button(path_frame, command=klasor_sec)
 btn_folder.pack(side="left", padx=2)
 ui_texts.kaydet(btn_folder, "Klasör Seç", "text")
 
-# Options
 opt_frame = ttk.LabelFrame(main, padding=10)
 opt_frame.grid(row=3, column=0, columnspan=2, sticky="ew", pady=5)
 ui_texts.kaydet(opt_frame, " Ayarlar ", "text")
@@ -710,12 +700,11 @@ log_text.pack(fill="both", expand=True)
 menu_bar = tk.Menu(root)
 root.config(menu=menu_bar)
 
-# Global olarak menü referansını sakla
 _araclar_menu_ref = None
 
 araclar_menu = tk.Menu(menu_bar, tearoff=0)
 menu_bar.add_cascade(menu=araclar_menu, label=_("Araçlar"))
-_araclar_menu_ref = araclar_menu  # Referansı sakla
+_araclar_menu_ref = araclar_menu
 
 def update_menu_labels():
     araclar_menu.delete(0, "end")
@@ -734,10 +723,10 @@ def guncelle_with_menu(ceviri_fonk):
     update_menu_labels()
     
     try:
-        # Label-based güncelleme
+
         menu_bar.entryconfigure(_("Araçlar"), label=ceviri_fonk("Araçlar"))
     except (tk.TclError, KeyError) as e:
-        # Fallback: Tüm cascade'leri tara
+
         try:
             for i in range(menu_bar.index("end") + 1):
                 try:
