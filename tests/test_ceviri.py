@@ -26,7 +26,7 @@ class TestCevirilmezMetin(unittest.TestCase):
         self.assertTrue(_cevirilmez_mi("#FFF"))
         
     def test_versiyon_algilandi(self):
-        self.assertTrue(_cevirilmez_mi("v2.1. 8"))
+        self.assertTrue(_cevirilmez_mi("v2.1.8"))
         self.assertTrue(_cevirilmez_mi("1.0.0"))
         
     def test_yol_algilandi(self):
