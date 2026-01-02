@@ -1,0 +1,8 @@
+{
+    "_aciklama": "Özel terimler ve çevirileri. 'kaynak': 'hedef' formatında.",
+    "_ornekler": {
+        "WordPress": "WordPress",
+        "WooCommerce": "WooCommerce",
+        "Premium": "Premium"
+    }
+}

@@ -1,0 +1,253 @@
+# English Language File
+msgid ""
+msgstr ""
+"Project-Id-Version: Otomatik PO Cevirici 3.0.0\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "GPT Destekli Otomatik .PO Çeviri v 3.0.0 - Muharrem DANIŞMAN"
+msgstr "GPT Powered Automatic .PO Translator v 3.0.0 - Muharrem DANIŞMAN"
+
+msgid "Hazır"
+msgstr "Ready"
+
+msgid "Dil:"
+msgstr "Language:"
+
+msgid " API "
+msgstr " API "
+
+msgid "OpenAI API Key (opsiyonel):"
+msgstr "OpenAI API Key (optional):"
+
+msgid " Kaynak "
+msgstr " Source "
+
+msgid "Dosya Seç"
+msgstr "Select File"
+
+msgid "Klasör Seç"
+msgstr "Select Folder"
+
+msgid " Ayarlar "
+msgstr " Settings "
+
+msgid "Model:"
+msgstr "Model:"
+
+msgid "Yön:"
+msgstr "Direction:"
+
+msgid "Belleğe Kaydet (tercihler.json)"
+msgstr "Save to Memory (tercihler.json)"
+
+msgid "Önizleme (10 Entry)"
+msgstr "Preview (10 Entries)"
+
+msgid "Çeviriyi Başlat"
+msgstr "Start Translation"
+
+msgid "Durdur"
+msgstr "Stop"
+
+msgid "✔ Çevrilen: "
+msgstr "✔ Translated: "
+
+msgid "⚠ Atlanan: "
+msgstr "⚠ Skipped: "
+
+msgid "❌ Hata: "
+msgstr "❌ Error: "
+
+msgid " İşlem Logları "
+msgstr " Process Logs "
+
+msgid "Araçlar"
+msgstr "Tools"
+
+msgid "Özel Sözlük Düzenle"
+msgstr "Edit Custom Dictionary"
+
+msgid "Gelişmiş Ayarlar"
+msgstr "Advanced Settings"
+
+msgid "Son Batch'i Geri Al"
+msgstr "Undo Last Batch"
+
+msgid "⏹️ Durduruluyor..."
+msgstr "⏹️ Stopping..."
+
+msgid "⚠️ Durdurma isteği gönderildi..."
+msgstr "⚠️ Stop request sent..."
+
+msgid "Dosya seçildi"
+msgstr "File selected"
+
+msgid "Klasör seçildi (Batch)"
+msgstr "Folder selected (Batch)"
+
+msgid "Uyarı"
+msgstr "Warning"
+
+msgid "Zaten bir işlem devam ediyor"
+msgstr "A process is already running"
+
+msgid "Geçerli bir dosya seçin."
+msgstr "Please select a valid file."
+
+msgid "Geçerli bir dosya veya klasör seçin."
+msgstr "Please select a valid file or folder."
+
+msgid "Bilgi"
+msgstr "Information"
+
+msgid "Önizleme modu sadece tek dosya için çalışır.\nLütfen bir .po dosyası seçin."
+msgstr "Preview mode works for single files only.\nPlease select a .po file."
+
+msgid "🔍 Önizleme başlatılıyor..."
+msgstr "🔍 Starting preview..."
+
+msgid "Önizleme Tamamlandı!\n\nToplam Entry: {}\nÖnizleme: {} entry\nBaşarılı: {} çeviri\n\nDevam etmek istiyor musunuz?"
+msgstr "Preview Completed!\n\nTotal Entries: {}\nPreviewed: {} entries\nSuccessful: {} translations\n\nDo you want to continue?"
+
+msgid "Önizleme Sonucu"
+msgstr "Preview Result"
+
+msgid "✔ Önizleme tamamlandı - Tam çeviri için 'Çeviriyi Başlat' butonunu kullanın"
+msgstr "✔ Preview completed - Use 'Start Translation' button for full translation"
+
+msgid "Önizleme iptal edildi"
+msgstr "Preview cancelled"
+
+msgid "❌ Önizleme başarısız"
+msgstr "❌ Preview failed"
+
+msgid "Onay"
+msgstr "Confirmation"
+
+msgid "Son batch çeviri işlemini geri almak istediğinizden emin misiniz?\n\nÇevrilmiş tüm dosyalar silinecek!"
+msgstr "Are you sure you want to undo the last batch translation?\n\nAll translated files will be deleted!"
+
+msgid "🔄 Geri alma işlemi başlatılıyor..."
+msgstr "🔄 Starting undo operation..."
+
+msgid "✅ Geri alma tamamlandı"
+msgstr "✅ Undo completed"
+
+msgid "Başarılı"
+msgstr "Success"
+
+msgid "Son batch işlemi geri alındı"
+msgstr "Last batch operation undone"
+
+msgid "❌ Geri alma başarısız"
+msgstr "❌ Undo failed"
+
+msgid "Hata"
+msgstr "Error"
+
+msgid "Geri alma işlemi başarısız"
+msgstr "Undo operation failed"
+
+msgid "⏳ Çeviri başlatıldı..."
+msgstr "⏳ Translation started..."
+
+msgid "İşlem Tamamlandı"
+msgstr "Operation Completed"
+
+msgid "Çevrilen: "
+msgstr "Translated: "
+
+msgid "Atlanan: "
+msgstr "Skipped: "
+
+msgid "Özel Sözlük Düzenleyici"
+msgstr "Custom Dictionary Editor"
+
+msgid "Özel terimlerinizi ekleyin. Bu terimler model yerine direkt kullanılacak."
+msgstr "Add your custom terms. These will be used directly instead of the model."
+
+msgid "Kaynak Metin"
+msgstr "Source Text"
+
+msgid "Hedef Metin"
+msgstr "Target Text"
+
+msgid "Sözlük yüklenemedi: {}"
+msgstr "Dictionary could not be loaded: {}"
+
+msgid "Yeni Terim Ekle"
+msgstr "Add New Term"
+
+msgid "Kaynak Metin:"
+msgstr "Source Text:"
+
+msgid "Hedef Metin:"
+msgstr "Target Text:"
+
+msgid "Her iki alanı da doldurun"
+msgstr "Fill in both fields"
+
+msgid "Ekle"
+msgstr "Add"
+
+msgid "Silinecek terimi seçin"
+msgstr "Select term to delete"
+
+msgid "Sözlük kaydedildi"
+msgstr "Dictionary saved"
+
+msgid "Sözlük kaydedilemedi: {}"
+msgstr "Dictionary could not be saved: {}"
+
+msgid "Yeni Ekle"
+msgstr "Add New"
+
+msgid "Sil"
+msgstr "Delete"
+
+msgid "Kaydet"
+msgstr "Save"
+
+msgid "Model Temperature (0.0 - 1.0):"
+msgstr "Model Temperature (0.0 - 1.0):"
+
+msgid "Maksimum Deneme Sayısı:"
+msgstr "Maximum Retry Count:"
+
+msgid "Tercihler Kayıt Aralığı:"
+msgstr "Preferences Save Interval:"
+
+msgid "Log Saklama Süresi (gün):"
+msgstr "Log Retention Period (days):"
+
+msgid "Önizleme Entry Sayısı:"
+msgstr "Preview Entry Count:"
+
+msgid "Gelişmiş ayarlar kaydedildi"
+msgstr "Advanced settings saved"
+
+msgid "Ayarlar kaydedilemedi: {}"
+msgstr "Settings could not be saved: {}"
+
+msgid "Varsayılan ayarlara dönmek istediğinizden emin misiniz?"
+msgstr "Are you sure you want to restore default settings?"
+
+msgid "Varsayılan"
+msgstr "Default"
+
+msgid "İptal"
+msgstr "Cancel"
+
+msgid "Dil Değişti"
+msgstr "Language Changed"
+
+msgid "Dil ayarı kaydedildi. Değişikliklerin tam olarak uygulanması için uygulamayı yeniden başlatın."
+msgstr "Language setting saved. Restart the application for changes to take full effect."
+
+msgid "Ayarlar dosyası okunamadı, varsayılan ayarlar kullanılacak."
+msgstr "Settings file could not be read, default settings will be used."
+
+msgid "İşleniyor: {} / {}"
+msgstr "Processing: {} / {}"

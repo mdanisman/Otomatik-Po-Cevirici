@@ -1,0 +1,7 @@
+{
+    "temperature": 0.1,
+    "maks_deneme_sayisi": 2,
+    "tercihler_kayit_araligi": 50,
+    "log_saklama_gun": 30,
+    "onizleme_entry_sayisi": 10
+}

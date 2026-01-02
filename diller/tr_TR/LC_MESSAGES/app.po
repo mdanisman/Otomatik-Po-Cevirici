@@ -1,0 +1,255 @@
+# Turkish Language File
+# NOTE: msgstr entries are intentionally empty because Turkish is the source language.
+# The msgid strings themselves ARE the Turkish translations.
+msgid ""
+msgstr ""
+"Project-Id-Version: Otomatik PO Cevirici 3.0.0\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "GPT Destekli Otomatik .PO Çeviri v 3.0.0 - Muharrem DANIŞMAN"
+msgstr ""
+
+msgid "Hazır"
+msgstr ""
+
+msgid "Dil:"
+msgstr ""
+
+msgid " API "
+msgstr ""
+
+msgid "OpenAI API Key (opsiyonel):"
+msgstr ""
+
+msgid " Kaynak "
+msgstr ""
+
+msgid "Dosya Seç"
+msgstr ""
+
+msgid "Klasör Seç"
+msgstr ""
+
+msgid " Ayarlar "
+msgstr ""
+
+msgid "Model:"
+msgstr ""
+
+msgid "Yön:"
+msgstr ""
+
+msgid "Belleğe Kaydet (tercihler.json)"
+msgstr ""
+
+msgid "Önizleme (10 Entry)"
+msgstr ""
+
+msgid "Çeviriyi Başlat"
+msgstr ""
+
+msgid "Durdur"
+msgstr ""
+
+msgid "✔ Çevrilen: "
+msgstr ""
+
+msgid "⚠ Atlanan: "
+msgstr ""
+
+msgid "❌ Hata: "
+msgstr ""
+
+msgid " İşlem Logları "
+msgstr ""
+
+msgid "Araçlar"
+msgstr ""
+
+msgid "Özel Sözlük Düzenle"
+msgstr ""
+
+msgid "Gelişmiş Ayarlar"
+msgstr ""
+
+msgid "Son Batch'i Geri Al"
+msgstr ""
+
+msgid "⏹️ Durduruluyor..."
+msgstr ""
+
+msgid "⚠️ Durdurma isteği gönderildi..."
+msgstr ""
+
+msgid "Dosya seçildi"
+msgstr ""
+
+msgid "Klasör seçildi (Batch)"
+msgstr ""
+
+msgid "Uyarı"
+msgstr ""
+
+msgid "Zaten bir işlem devam ediyor"
+msgstr ""
+
+msgid "Geçerli bir dosya seçin."
+msgstr ""
+
+msgid "Geçerli bir dosya veya klasör seçin."
+msgstr ""
+
+msgid "Bilgi"
+msgstr ""
+
+msgid "Önizleme modu sadece tek dosya için çalışır.\nLütfen bir .po dosyası seçin."
+msgstr ""
+
+msgid "🔍 Önizleme başlatılıyor..."
+msgstr ""
+
+msgid "Önizleme Tamamlandı!\n\nToplam Entry: {}\nÖnizleme: {} entry\nBaşarılı: {} çeviri\n\nDevam etmek istiyor musunuz?"
+msgstr ""
+
+msgid "Önizleme Sonucu"
+msgstr ""
+
+msgid "✔ Önizleme tamamlandı - Tam çeviri için 'Çeviriyi Başlat' butonunu kullanın"
+msgstr ""
+
+msgid "Önizleme iptal edildi"
+msgstr ""
+
+msgid "❌ Önizleme başarısız"
+msgstr ""
+
+msgid "Onay"
+msgstr ""
+
+msgid "Son batch çeviri işlemini geri almak istediğinizden emin misiniz?\n\nÇevrilmiş tüm dosyalar silinecek!"
+msgstr ""
+
+msgid "🔄 Geri alma işlemi başlatılıyor..."
+msgstr ""
+
+msgid "✅ Geri alma tamamlandı"
+msgstr ""
+
+msgid "Başarılı"
+msgstr ""
+
+msgid "Son batch işlemi geri alındı"
+msgstr ""
+
+msgid "❌ Geri alma başarısız"
+msgstr ""
+
+msgid "Hata"
+msgstr ""
+
+msgid "Geri alma işlemi başarısız"
+msgstr ""
+
+msgid "⏳ Çeviri başlatıldı..."
+msgstr ""
+
+msgid "İşlem Tamamlandı"
+msgstr ""
+
+msgid "Çevrilen: "
+msgstr ""
+
+msgid "Atlanan: "
+msgstr ""
+
+msgid "Özel Sözlük Düzenleyici"
+msgstr ""
+
+msgid "Özel terimlerinizi ekleyin. Bu terimler model yerine direkt kullanılacak."
+msgstr ""
+
+msgid "Kaynak Metin"
+msgstr ""
+
+msgid "Hedef Metin"
+msgstr ""
+
+msgid "Sözlük yüklenemedi: {}"
+msgstr ""
+
+msgid "Yeni Terim Ekle"
+msgstr ""
+
+msgid "Kaynak Metin:"
+msgstr ""
+
+msgid "Hedef Metin:"
+msgstr ""
+
+msgid "Her iki alanı da doldurun"
+msgstr ""
+
+msgid "Ekle"
+msgstr ""
+
+msgid "Silinecek terimi seçin"
+msgstr ""
+
+msgid "Sözlük kaydedildi"
+msgstr ""
+
+msgid "Sözlük kaydedilemedi: {}"
+msgstr ""
+
+msgid "Yeni Ekle"
+msgstr ""
+
+msgid "Sil"
+msgstr ""
+
+msgid "Kaydet"
+msgstr ""
+
+msgid "Model Temperature (0.0 - 1.0):"
+msgstr ""
+
+msgid "Maksimum Deneme Sayısı:"
+msgstr ""
+
+msgid "Tercihler Kayıt Aralığı:"
+msgstr ""
+
+msgid "Log Saklama Süresi (gün):"
+msgstr ""
+
+msgid "Önizleme Entry Sayısı:"
+msgstr ""
+
+msgid "Gelişmiş ayarlar kaydedildi"
+msgstr ""
+
+msgid "Ayarlar kaydedilemedi: {}"
+msgstr ""
+
+msgid "Varsayılan ayarlara dönmek istediğinizden emin misiniz?"
+msgstr ""
+
+msgid "Varsayılan"
+msgstr ""
+
+msgid "İptal"
+msgstr ""
+
+msgid "Dil Değişti"
+msgstr ""
+
+msgid "Dil ayarı kaydedildi. Değişikliklerin tam olarak uygulanması için uygulamayı yeniden başlatın."
+msgstr ""
+
+msgid "Ayarlar dosyası okunamadı, varsayılan ayarlar kullanılacak."
+msgstr ""
+
+msgid "İşleniyor: {} / {}"
+msgstr ""
