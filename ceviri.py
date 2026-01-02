@@ -205,10 +205,7 @@ def _ceviri_gecerli(kaynak: str, hedef: str) -> bool:
     if not hedef or not hedef.strip():
         return False
 
-    if hedef. strip() == kaynak.strip():
-
-        if " " not in kaynak. strip() and kaynak.strip()[0].isupper():
-            return True
+    if hedef.  strip() == kaynak.strip():
         return False
 
     if len(hedef) > len(kaynak) * 5:
